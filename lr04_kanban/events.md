@@ -98,5 +98,40 @@
 | 2026-10-20T11:33:42Z | F-012 | In progress · WIP 2 → Review · WIP 2 | Перевірено 5 умов DoR, межу деталізації, 0/12 допущених і відповідність CSV/README; валідатор без errors. |
 | 2026-10-20T11:33:47Z | F-012 | Review · WIP 2 → Done | DoR враховує залежності, валідатор ЛР06 без помилок; готовність документів не означає готовність реалізації. Доказ: https://github.com/elementalka/pm-2026-kn41-basok/commit/8761e7cccbf1f10cfa12fb2de43611cba56e0dd0 |
 | 2026-10-20T11:33:49Z | F-012 | Issue закрита як completed | [Доказ](https://github.com/elementalka/pm-2026-kn41-basok/commit/8761e7cccbf1f10cfa12fb2de43611cba56e0dd0) |
+| 2026-10-20T11:56:23Z | F-014 | Створено issue | https://github.com/elementalka/pm-2026-kn41-basok/issues/29 |
+| 2026-10-20T11:56:25Z | F-014 | Backlog → Backlog | Нову роботу створено в поточному відкритому періоді ЛР04. |
+| 2026-10-20T11:56:28Z | F-014 | Backlog → Ready | Входи та критерії перевірені; залежності завершені. |
+| 2026-10-20T11:56:30Z | F-014 | Ready → In progress · WIP 2 | Почалася фактична робота над результатом картки. |
+| 2026-10-20T11:57:31Z | F-014 | In progress · WIP 2 → Review · WIP 2 | M2 A–F перевірено; 4 критерії, 8 ролей, 3 альтернативи, джерела чисел, валідатор 0 errors / 0 warnings. |
+| 2026-10-20T11:57:36Z | F-014 | Review · WIP 2 → Done | M2 A–F перевірено; 4 критерії, 8 ролей, 3 альтернативи, джерела чисел, валідатор 0 errors / 0 warnings. Доказ: https://github.com/elementalka/pm-2026-kn41-basok/commit/d9f3ff5f7f088a18dbb4f8ca9a41f9a4c201bcba |
+| 2026-10-20T11:57:39Z | F-014 | Issue закрита як completed | [Доказ](https://github.com/elementalka/pm-2026-kn41-basok/commit/d9f3ff5f7f088a18dbb4f8ca9a41f9a4c201bcba) |
+| 2026-10-20T11:59:06Z | F-015 | Створено issue | https://github.com/elementalka/pm-2026-kn41-basok/issues/30 |
+| 2026-10-20T11:59:09Z | F-015 | Backlog → Backlog | Нову роботу створено в поточному відкритому періоді ЛР04. |
+| 2026-10-20T11:59:11Z | F-015 | Backlog → Ready | Входи та критерії перевірені; залежності завершені. |
+| 2026-10-20T11:59:13Z | F-015 | Ready → In progress · WIP 2 | Почалася фактична робота над результатом картки. |
+| 2026-10-20T11:59:15Z | F-015 | In progress · WIP 2 → Review · WIP 2 | M3 A–F перевірено, 15 історій / 12 REL-1, негативні AC й INVEST видимі; валідатор без помилок і попереджень. |
+| 2026-10-20T11:59:20Z | F-015 | Review · WIP 2 → Done | M3 A–F перевірено, 15 історій / 12 REL-1, негативні AC й INVEST видимі; валідатор без помилок і попереджень. Доказ: https://github.com/elementalka/pm-2026-kn41-basok/commit/30dd7f7b7f19f80ea7eeb57c797e8fadcb310041 |
+| 2026-10-20T11:59:22Z | F-015 | Issue закрита як completed | [Доказ](https://github.com/elementalka/pm-2026-kn41-basok/commit/30dd7f7b7f19f80ea7eeb57c797e8fadcb310041) |
+| 2026-10-20T12:02:27Z | F-016 | Створено issue | https://github.com/elementalka/pm-2026-kn41-basok/issues/31 |
+| 2026-10-20T12:02:30Z | F-016 | Backlog → Backlog | Нову роботу створено в поточному відкритому періоді ЛР04. |
+| 2026-10-20T12:02:32Z | F-016 | Backlog → Ready | Входи та критерії перевірені; залежності завершені. |
+| 2026-10-20T12:02:34Z | F-016 | Ready → In progress · WIP 2 | Почалася фактична робота над результатом картки. |
+| 2026-10-20T12:02:49Z | F-016 | In progress · WIP 2 → Review · WIP 2 | WBS 28 вузлів / 2412 год; CPM 80 днів, ресурси по днях у V03; REL-1/REL-2 узгоджені, перевірки без errors. |
+| 2026-10-20T12:02:53Z | F-016 | Review · WIP 2 → Done | WBS 28 вузлів / 2412 год; CPM 80 днів, ресурси по днях у V03; REL-1/REL-2 узгоджені, перевірки без errors. Доказ: https://github.com/elementalka/pm-2026-kn41-basok/commit/4e178ccabcd586c07ad0224787a6ac29f7b7fdd1 |
+| 2026-10-20T12:02:56Z | F-016 | Issue закрита як completed | [Доказ](https://github.com/elementalka/pm-2026-kn41-basok/commit/4e178ccabcd586c07ad0224787a6ac29f7b7fdd1) |
+| 2026-10-20T12:03:56Z | F-017 | Створено issue | https://github.com/elementalka/pm-2026-kn41-basok/issues/32 |
+| 2026-10-20T12:03:58Z | F-017 | Backlog → Backlog | Нову роботу створено в поточному відкритому періоді ЛР04. |
+| 2026-10-20T12:04:01Z | F-017 | Backlog → Ready | Входи та критерії перевірені; залежності завершені. |
+| 2026-10-20T12:04:04Z | F-017 | Ready → In progress · WIP 2 | Почалася фактична робота над результатом картки. |
+| 2026-10-20T12:06:03Z | F-017 | In progress · WIP 2 → Review · WIP 2 | 12 історій / 39 голосів, PERT55SP, S-14 переоцінено2→5, відхилення читання конвертів зазначено; валідатор без errors. |
+| 2026-10-20T12:06:07Z | F-017 | Review · WIP 2 → Done | 12 історій / 39 голосів, PERT55SP, S-14 переоцінено2→5, відхилення читання конвертів зазначено; валідатор без errors. Доказ: https://github.com/elementalka/pm-2026-kn41-basok/commit/c21cafd6fadd0e1a4f25a00d2418f205a1e28d26 |
+| 2026-10-20T12:06:10Z | F-017 | Issue закрита як completed | [Доказ](https://github.com/elementalka/pm-2026-kn41-basok/commit/c21cafd6fadd0e1a4f25a00d2418f205a1e28d26) |
+| 2026-10-20T12:07:11Z | F-018 | Створено issue | https://github.com/elementalka/pm-2026-kn41-basok/issues/33 |
+| 2026-10-20T12:07:14Z | F-018 | Backlog → Backlog | Нову роботу створено в поточному відкритому періоді ЛР04. |
+| 2026-10-20T12:07:16Z | F-018 | Backlog → Ready | Входи та критерії перевірені; залежності завершені. |
+| 2026-10-20T12:07:18Z | F-018 | Ready → In progress · WIP 2 | Почалася фактична робота над результатом картки. |
+| 2026-10-20T12:10:03Z | F-018 | In progress · WIP 2 → Review · WIP 2 | Кроки4/6 виконано: 3×10000 прогонів220SP і контрольні випадки; власні CSV чесно чекають двох спринтів. |
+| 2026-10-20T12:10:08Z | F-018 | Review · WIP 2 → Done | Кроки4/6 виконано: 3×10000 прогонів220SP і контрольні випадки; власні CSV чесно чекають двох спринтів. Доказ: https://github.com/elementalka/pm-2026-kn41-basok/commit/ee8bee66422c90b6a175a78124950788c0d625de |
+| 2026-10-20T12:10:10Z | F-018 | Issue закрита як completed | [Доказ](https://github.com/elementalka/pm-2026-kn41-basok/commit/ee8bee66422c90b6a175a78124950788c0d625de) |
 
-Проміжне порівняння: до WIP-зміни завершено F-001, після — 11 standard і 1 expedite в одній сесії. Причинний висновок про швидкість потребує довшого спостереження. Старі назви `In progress · WIP 3` в історії збережені як факти тих переходів.
+Проміжне порівняння: до WIP-зміни завершено F-001, після — 16 standard і 1 expedite у сесіях 20.10. Причинний висновок про швидкість потребує довшого спостереження. Старі назви `In progress · WIP 3` в історії збережені як факти тих переходів.
