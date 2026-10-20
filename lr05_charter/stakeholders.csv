@@ -1,1 +1,9 @@
 stakeholder_id,name_or_role,organization,interest,influence,attitude,strategy,owner
+ST-01,Представник господарської частини,Замовник,high,high,supporter,manage_closely,PM
+ST-02,Представник навчальної частини,Замовник і власник розкладу,high,high,supporter,manage_closely,BA
+ST-03,Відповідальний за видачу обладнання,Господарська частина,high,high,neutral,manage_closely,BA
+ST-04,Комендант корпусу,Експлуатація корпусу,low,high,blocker,keep_satisfied,PM
+ST-05,Представник студентських організацій,Заявники,high,low,supporter,keep_informed,BA
+ST-06,Викладач-заявник,Заявники,high,low,supporter,keep_informed,BA
+ST-07,Адміністратор IdP та інтеграції,ІТ-служба,low,high,neutral,keep_satisfied,PM
+ST-08,Працівник іншого корпусу,Поза пілотом,low,low,neutral,monitor,PM
