@@ -1,1 +1,14 @@
 item_id,stakeholder_id,message,channel,frequency,format,owner
+C-01,ST-01,Статус REL-1: докази Done; строк; R-05 і потрібне рішення A-07,report,weekly,written,PM
+C-02,ST-02,Версія розкладу; карта кодів; правила пілота й відхилені записи,meeting,weekly,verbal,BA
+C-03,ST-03,Каталог обладнання; конфлікти видачі й сценарії спільної заявки,demo,biweekly,presentation,BA
+C-04,ST-04,Порядок відкриття аудиторій і список дозволених заходів; за тригером R-03 потрібне рішення до пілота,call,on_event,verbal,PM
+C-05,ST-05,Сценарії заявок і зворотний зв’язок пілота,demo,biweekly,presentation,BA
+C-06,ST-06,Перевірка часу подання за SC-02 і станів заявки,demo,biweekly,presentation,BA
+C-07,ST-07,За тригером R-04: відсутні входи до T-09/T-12; запит доступу і вплив на дату,call,on_event,verbal,PM
+C-08,ST-09,Три вимоги ІБ; докази аудиту читання та строків; за R-05 блокування виробничого запуску,meeting,on_event,verbal,PM
+C-09,ST-10,WIP; передумови DoR; нові блокери й наступна дія,chat,daily,written,PM
+C-10,ST-14,За R-01/R-05 або зірваної T-23: ціна варіантів дати/обсягу/бюджету; запит рішення A-05/A-06,call,on_event,verbal,PM
+C-11,ST-11,Нез’ясовані правила; зміни AC і приймання,chat,weekly,written,PM
+C-12,ST-12,Найвищі залежності; версія контракту; зміни через A-06,chat,weekly,written,PM
+C-13,ST-13,Сценарії SC-01–SC-04; R-02; дефекти та заборона релізу,chat,weekly,written,PM

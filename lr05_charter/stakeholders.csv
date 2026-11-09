@@ -8,3 +8,8 @@ ST-06,Викладач-заявник,Заявники,high,low,supporter,keep_i
 ST-07,Адміністратор IdP та інтеграції,ІТ-служба,low,high,neutral,keep_satisfied,PM
 ST-08,Працівник іншого корпусу,Поза пілотом,low,low,neutral,monitor,PM
 ST-09,Представник служби інформаційної безпеки,Служба ІБ,high,high,neutral,manage_closely,PM
+ST-10,PM,Команда V03; фактичний виконавець elementalka,high,high,supporter,manage_closely,PM
+ST-11,BA,Команда V03; модельна роль,high,low,supporter,keep_informed,PM
+ST-12,Dev,Три Dev V03; модельна роль,high,low,supporter,keep_informed,PM
+ST-13,QA,Команда V03; модельна роль,high,low,supporter,keep_informed,PM
+ST-14,Спонсор проєкту,Навчальна роль з події курсу,low,high,neutral,keep_satisfied,PM
