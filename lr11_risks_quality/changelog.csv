@@ -1,1 +1,4 @@
 change_id,date,source,description,story_ids,points_delta,decision,rationale,affected_files
+CH-01,2026-10-20,course_event,Три вимоги ІБ; подія датована днем ЛР10; опрацьована 10.11,S-01;S-15,0,deferred,S-01 вже академічний вхід; додаткові 8 SP не обіцяємо при нулю календарного резерву і відсутності спринтів. Без журналу читання та сторінки даних виробниче приймання заблоковане,lr11_risks_quality/README.md;lr11_risks_quality/risks.csv
+CH-02,2026-10-20,own_decision,Уточнення міграції S-14 після конверта ЛР08,S-14,3,accepted,Початкові 2 SP стали 5; канонічний ключ і архів потрібні для безпечного допуску,lr06_backlog/backlog.csv;lr08_poker/votes.csv;lr08_poker/estimates.csv
+CH-03,2026-10-20,own_decision,Звуження S-04 до однієї аудиторії й однієї одиниці обладнання,S-04,0,accepted,Уточнення INVEST до оцінювання; SP на момент рішення не фіксувалися; нуль означає відсутність зміни зафіксованої SP-бази,lr06_backlog/backlog.csv;lr06_backlog/README.md

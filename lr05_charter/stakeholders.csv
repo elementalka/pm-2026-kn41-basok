@@ -7,3 +7,4 @@ ST-05,Представник студентських організацій,З�
 ST-06,Викладач-заявник,Заявники,high,low,supporter,keep_informed,BA
 ST-07,Адміністратор IdP та інтеграції,ІТ-служба,low,high,neutral,keep_satisfied,PM
 ST-08,Працівник іншого корпусу,Поза пілотом,low,low,neutral,monitor,PM
+ST-09,Представник служби інформаційної безпеки,Служба ІБ,high,high,neutral,manage_closely,PM
