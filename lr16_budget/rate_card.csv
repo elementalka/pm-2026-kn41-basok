@@ -1,1 +1,5 @@
 role,fte,hours,rate,source,note
+PM,0.5,320,387,https://dou.ua/lenta/articles/salary-report-managers-summer-2026/,Навчальна нормалізація зарплатного орієнтира: USD×45/160×0.55; до цілої грн. Це не ринкова оферта; PM/BA однакові за обраною базою
+BA,0.5,320,387,https://dou.ua/lenta/articles/salary-report-data-winter-2026/,Навчальна нормалізація зарплатного орієнтира: USD×45/160×0.55; до цілої грн. Це не ринкова оферта; PM/BA однакові за обраною базою
+Dev,3,1920,541,https://dou.ua/lenta/articles/salary-report-devs-summer-2026/,Навчальна нормалізація зарплатного орієнтира: USD×45/160×0.55; до цілої грн. Це не ринкова оферта; PM/BA однакові за обраною базою
+QA,1,640,357,https://dou.ua/lenta/articles/salary-report-qa-summer-2026/,Навчальна нормалізація зарплатного орієнтира: USD×45/160×0.55; до цілої грн. Це не ринкова оферта; PM/BA однакові за обраною базою
