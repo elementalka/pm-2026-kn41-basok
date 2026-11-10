@@ -1,0 +1,5 @@
+team,context,deploys_per_week,lead_time_hours,change_failure_rate,recovery_hours
+alpha,мікросервіси і повний CI/CD,14,6,4,1
+beta,мікросервіси і повний CI/CD,20,4,31,9
+gamma,монолітна успадкована система без автотестів,0.2,240,3,36
+delta,монолітна успадкована система з частковими автотестами,5,30,12,4
