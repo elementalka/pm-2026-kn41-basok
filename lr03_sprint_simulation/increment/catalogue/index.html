@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="uk">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CampusReserve — навчальний каталог</title>
+<style>
+body{font:16px/1.5 system-ui;margin:0;background:#f1f5f9;color:#172033}main{max-width:1000px;margin:32px auto;padding:24px;background:white;border-radius:16px}h1{margin-top:0}.notice{padding:12px;background:#fff4d6;border-left:4px solid #d89600}label{display:inline-grid;margin:8px;gap:4px}input,select,button{font:inherit;padding:8px;border:1px solid #9aa8bc;border-radius:6px}button{cursor:pointer;background:#123d70;color:white}table{width:100%;border-collapse:collapse;margin:16px 0}th,td{text-align:left;border-bottom:1px solid #cdd5df;padding:8px}#result{white-space:pre-wrap;overflow-wrap:anywhere}fieldset{margin-top:16px}small{display:block}button:disabled{opacity:.5;cursor:default}
+</style>
+<main>
+<h1>CampusReserve · Каталог</h1>
+<p class="notice">Навчальний локальний компонент S-11. Усі ресурси й identity вигадані. Перемикач ролі відтворює тестовий вхід; академічний IdP, вільний розклад і виробничий допуск тут не реалізовані.</p>
+<label>Тестова роль<select id="role"><option value="requester">Заявник</option><option value="admin">Адміністратор</option></select></label>
+<button id="refresh">Оновити каталог</button>
+<p id="message" role="status"></p>
+<table><thead><tr><th>Код</th><th>Ресурс</th><th>Тип</th><th>Доступність</th><th>Архів</th></tr></thead><tbody id="list"></tbody></table>
+<fieldset id="editor" disabled><legend>Редагування адміністратором</legend>
+<label>Код<input id="code" maxlength="32" placeholder="A-103"></label>
+<label>Назва<input id="name" maxlength="160" placeholder="Навчальна аудиторія"></label>
+<label>Тип<select id="kind"><option value="room">Аудиторія</option><option value="equipment">Обладнання</option></select></label>
+<label>Доступність<select id="status"><option value="available">Доступний</option><option value="unavailable">Недоступний</option></select></label>
+<div><button id="create">Додати</button> <button id="update">Зберегти за кодом</button> <button id="archive">Архівувати за кодом</button></div>
+<small>Код стабільний: дубль повертає 409, архівація зберігає історичне посилання. Для негативної перевірки requester використайте API-тест; прихована кнопка сама по собі не захист.</small>
+</fieldset>
+<h2>Синтетичні історичні посилання</h2><pre id="history"></pre>
+<h2>Остання відповідь</h2><pre id="result"></pre>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+async function api(path,method='GET',body){
+ const token=$('role').value==='admin'?'catalogue-admin-demo':'catalogue-requester-demo';
+ const response=await fetch(path,{method,headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},body:body===undefined?undefined:JSON.stringify(body)});
+ const data=await response.json();$('result').textContent=response.status+' '+JSON.stringify(data,null,2);
+ if(!response.ok)throw Error(response.status+': '+(data.error||'помилка'));
+ return data;
+}
+async function refresh(){
+ try{
+  $('editor').disabled=$('role').value!=='admin';
+  const archive=$('role').value==='admin'?'?include_archived=1':'';
+  const data=await api('/api/resources'+archive);$('list').replaceChildren();
+  for(const r of data.resources){const row=document.createElement('tr');for(const value of [r.code,r.name,r.kind,r.status,r.archived?'так':'ні']){const cell=document.createElement('td');cell.textContent=value;row.append(cell)}$('list').append(row)}
+  const h=await api('/api/history');$('history').textContent=JSON.stringify(h.requests,null,2);$('message').textContent='Каталог оновлено.';
+ }catch(e){$('message').textContent=e.message}
+}
+function payload(){return {code:$('code').value,name:$('name').value,kind:$('kind').value,status:$('status').value}}
+async function write(method,archive=false){
+ try{const path='/api/resources'+(method==='PUT'?'/'+encodeURIComponent($('code').value):'');await api(path,method,archive?{archived:true}:payload());const result=$('result').textContent;await refresh();$('result').textContent=result;$('message').textContent='Збережено.'}catch(e){$('message').textContent=e.message}
+}
+$('role').onchange=refresh;$('refresh').onclick=refresh;
+$('create').onclick=()=>write('POST');$('update').onclick=()=>write('PUT');$('archive').onclick=()=>write('PUT',true);
+refresh();
+</script>
+</html>
