@@ -1,0 +1,16 @@
+{
+  "dataset": "CampusReserve synthetic catalogue v1",
+  "purpose": "Навчальні вигадані дані; жодних реальних користувачів або приміщень",
+  "identities": {
+    "catalogue-admin-demo": "admin",
+    "catalogue-requester-demo": "requester"
+  },
+  "resources": [
+    {"code": "A-101", "name": "Навчальна аудиторія 101", "kind": "room", "status": "available", "archived": false},
+    {"code": "P-001", "name": "Навчальний проєктор 001", "kind": "equipment", "status": "unavailable", "archived": false},
+    {"code": "A-099", "name": "Архівна навчальна аудиторія", "kind": "room", "status": "unavailable", "archived": true}
+  ],
+  "historical_requests": [
+    {"request_id": "DEMO-H-01", "resource_code": "A-099", "status": "cancelled"}
+  ]
+}

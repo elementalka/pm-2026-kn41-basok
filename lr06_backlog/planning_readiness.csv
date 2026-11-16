@@ -1,0 +1,16 @@
+story_id,sprint_goal,scenario_ref,fixture_ref,dependency_evidence,dependency_status,estimate,acceptor_id,open_questions,ready,checked_on
+S-11,Адміністратор підтримує каталог; заявник читає лише активні ресурси без права редагування,lr03_sprint_simulation/increment/catalogue/contract.md,lr03_sprint_simulation/increment/catalogue/fixtures.json,lr03_sprint_simulation/increment/catalogue/contract.md#зафіксовані-відповіді-перед-плануванням,confirmed_local_fixture,5,ST-01,none_in_declared_scope,yes,2026-11-16
+S-01,,,,,not_checked_for_sprint,5,ST-06,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
+S-02,,,,,not_checked_for_sprint,3,ST-04,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
+S-09,,,,,not_checked_for_sprint,8,ST-02,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
+S-03,,,,,not_checked_for_sprint,5,ST-06,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
+S-04,,,,,not_checked_for_sprint,8,ST-01,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
+S-06,,,,,not_checked_for_sprint,5,ST-04,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
+S-07,,,,,not_checked_for_sprint,3,ST-06,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
+S-05,,,,,not_checked_for_sprint,2,ST-01,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
+S-12,,,,,not_checked_for_sprint,3,ST-04,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
+S-14,,,,,not_checked_for_sprint,5,ST-04,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
+S-15,,,,,not_checked_for_sprint,3,ST-04,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
+S-08,,,,,not_checked_for_sprint,,,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
+S-10,,,,,not_checked_for_sprint,,,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
+S-13,,,,,not_checked_for_sprint,,,Не проведена перевірка кандидатури для цього спринта,no,2026-11-16
