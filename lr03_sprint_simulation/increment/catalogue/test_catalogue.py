@@ -65,6 +65,13 @@ class CatalogueAcceptance(unittest.TestCase):
         self.assertEqual(self.api('/api/resources', token='unknown')[0], 401)
         self.assertEqual(self.api('/api/resources', 'POST', self.resource(), token='unknown')[0], 401)
 
+    def test_bare_token_without_bearer_scheme_is_rejected(self):
+        request = Request(self.base + '/api/resources', headers={'Authorization': 'catalogue-admin-demo'})
+        with self.assertRaises(HTTPError) as error:
+            urlopen(request, timeout=3)
+        self.assertEqual(error.exception.code, 401)
+        error.exception.close()
+
     def test_ac3_archived_resource_hidden_and_historical_code_unchanged(self):
         self.assertEqual(self.api('/api/resources/A-099', 'PUT', {'archived': False})[0], 200)
         history_before = self.model.history()

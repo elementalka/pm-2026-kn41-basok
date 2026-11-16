@@ -127,7 +127,9 @@ def handler(catalogue):
                 self.end_headers()
                 self.wfile.write(raw)
                 return
-            role = FIXTURES['identities'].get(self.headers.get('Authorization', '').removeprefix('Bearer '))
+            authorization = self.headers.get('Authorization', '')
+            token = authorization[7:] if authorization.startswith('Bearer ') else ''
+            role = FIXTURES['identities'].get(token)
             if role is None:
                 self.respond(401, {'error': 'Unknown fixture identity'})
                 return

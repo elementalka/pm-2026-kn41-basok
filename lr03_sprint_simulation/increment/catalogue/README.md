@@ -22,7 +22,7 @@ python lr03_sprint_simulation/increment/catalogue/server.py
 python -m unittest discover -s lr03_sprint_simulation/increment/catalogue -p test_catalogue.py -v
 ```
 
-HTTP-сервер піднімається на випадковому локальному порту; перевіряються фактичні запити та стан БД, а не тільки виклики функцій. [Протокол](verification.md) пов’язує10 перевірок із трьома AC.
+HTTP-сервер піднімається на випадковому локальному порту; перевіряються фактичні запити та стан БД, а не тільки виклики функцій. [Протокол](verification.md) пов’язує11 перевірок із трьома AC.
 
 ## Окремий наступний огляд
 
