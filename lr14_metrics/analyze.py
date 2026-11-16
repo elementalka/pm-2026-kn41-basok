@@ -15,3 +15,9 @@ if __name__=='__main__':
     print({'N':len(rows),'weeks':weeks,'throughput':round(len(rows)/weeks,1),'cycle_P50':quantile(ct,.5),'cycle_P85':quantile(ct,.85),'lead_P85':quantile(lt,.85),'queue':quantile(lt,.85)-quantile(ct,.85),'cycle_sorted':sorted(ct)})
     for r in load('lr14_reference_cfd.csv'):
         print('week',r['week'],'WIP',int(r['started_cum'])-int(r['done_cum']),'queue',int(r['created_cum'])-int(r['started_cum']))
+
+    source=P.parent/'lr04_kanban/flow_timestamps.csv'
+    if source.exists():
+        with source.open(encoding='utf-8',newline='') as f: timed=list(csv.DictReader(f))
+        seconds=[int(r['elapsed_seconds']) for r in timed if r['elapsed_seconds']!='']
+        print('Supplemental status intervals; not full work duration:',{'coverage':str(len(seconds))+'/'+str(len(timed)),'unit':'seconds','min':min(seconds),'max':max(seconds),'mean':round(sum(seconds)/len(seconds),2),'P50':quantile(seconds,.5),'P85':quantile(seconds,.85)})
