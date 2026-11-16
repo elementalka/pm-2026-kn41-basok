@@ -5,13 +5,26 @@ ROOT=Path(__file__).resolve().parents[1]
 def load(path):
     with (ROOT/path).open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
 def evidence(path):return bool(path) and (ROOT/path.split('#')[0]).is_file()
+def index(rows, key):
+    result={r[key]:r for r in rows}
+    if len(result)!=len(rows) or '' in result:
+        raise ValueError('Missing or duplicate key: '+key)
+    return result
+
 def check():
     stories={r['story_id']:r for r in load('lr06_backlog/backlog.csv')}
     estimates={r['story_id']:r['final_estimate'] for r in load('lr08_poker/estimates.csv')}
     criteria={r['criterion_id']:r['accepted_by'] for r in load('lr05_charter/success_criteria.csv')}
     stakeholders={r['stakeholder_id'] for r in load('lr05_charter/stakeholders.csv')}
+    index(load('lr06_backlog/backlog.csv'),'story_id')
+    index(load('lr08_poker/estimates.csv'),'story_id')
+    readiness=index(load('lr06_backlog/planning_readiness.csv'),'story_id')
+    if readiness.keys()!=stories.keys():
+        raise ValueError('Readiness must cover each backlog story exactly once')
     result=[]
-    for r in load('lr06_backlog/planning_readiness.csv'):
+    for r in readiness.values():
+        if r['ready'] not in ('yes','no'):
+            raise ValueError('ready must be yes or no: '+r['story_id'])
         s=stories[r['story_id']];missing=[]
         if not all(s[k] for k in ['as_a','i_want','so_that','success_criterion']) or not r['sprint_goal']:missing.append('goal/value')
         if len([a for a in s['acceptance_criteria'].split(';') if a.strip()])<2 or not evidence(r['scenario_ref']):missing.append('AC/scenario')
